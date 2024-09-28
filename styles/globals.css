@@ -1,4 +1,6 @@
 :root {
+	--font-family: 'Fira Sans Condensed', sans-serif;
+	--second-family: 'Oswald', sans-serif;
 }
 
 *,
@@ -36,6 +38,7 @@ a {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
+	text-decoration: none;
 }
 
 .visually-hidden {

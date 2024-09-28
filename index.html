@@ -7,44 +7,102 @@
 		<link rel="stylesheet" href="/styles/globals.css" />
 		<link rel="stylesheet" href="/styles/styles.css" />
 		<link rel="stylesheet" href="fonts/fonts.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 	</head>
-	<body class='page'>
-		<header class='header'>
-			<a class="header__logo"></a>
+	<body class="page">
+		<header class="header">
+			<a class="header__logo">
 				<img
 					class="header__logo-image"
 					src="./images/Archies.svg"
 					alt="Логотип проекта"
 				/>
 			</a>
-			<nav class='header__menu'>
-				<ul class='header__menu-list'>
-					<li class='header__menu-item header__menu-item__active'>
-						<a class='header__menu-link' href='#'>Home</a>
+			<nav class="header__menu">
+				<ul class="header__menu-list">
+					<li class="header__menu-item header__menu-item__active">
+						<a class="header__menu-link" href="#">Home</a>
 					</li>
-					<li class='header__menu-item'>
-						<a class='header__menu-link' href='#'>About</a>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">About</a>
 					</li>
-					<li class='header__menu-item'>
-						<a class='header__menu-link' href='#'>Services</a>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">Services</a>
 					</li>
-					<li class='header__menu-item'>
-						<a class='header__menu-link' href='#'>Project</a>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">Project</a>
 					</li>
-					<li class='header__menu-item'>
-						<a class='header__menu-link' href='#'>Blog</a>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">Blog</a>
 					</li>
-					<li class='header__menu-item'>
-						<a class='header__menu-link' href='#'>Contact</a>
+					<li class="header__menu-item">
+						<a class="header__menu-link" href="#">Contact</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
+			<section class="cover">
+				<h1 class="cover__title">Transform your space with archies</h1>
+				<h2 class="cover__description-text">
+					Our team of expert designers works closely with clients to create
+					unique, functional snd beautiful spaces that are tailored to their
+					specific needs and preferences
+				</h2>
+			</section>
+			<section class="cover__slider">
+				
+			</section>
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<a class="cover__house-link" target="_blank" href="#">
+							<img
+								class="cover__house-icon"
+								src="images/modern-house_1.avif"
+								alt="Дом в современном стиле"
+							/>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="cover__house-link" target="_blank" href="#"></a>
+							<img
+								class="cover__house-icon"
+								src="images/house2.jpg"
+								alt="Дом в современном стиле"
+							/>
+						</a>
+					</div>
+					<div class="swiper-slide">
+						<a class="cover__house-link" target="_blank" href="#"></a>
+							<img
+								class="cover__house-icon"
+								src="images/house3.jpg"
+								alt="Дом в современном стиле"
+							/>
+						</a>
+					</div>
+					
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
+			</div>
 		</main>
-		<footer>
-
-		</footer>
+		<footer></footer>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>

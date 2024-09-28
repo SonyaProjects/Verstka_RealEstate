@@ -1,3 +1,46 @@
-.page{
-	font-family: ;
+.page {
+	width: 1100px;
+	margin: 0 auto;
+	font-family: var(--font-family);
+	background-color: #f9f8f4;
+	color: #1b1b1b;
 }
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 20px;
+}
+.header__menu-list {
+	display: flex;
+}
+.header__logo-image {
+	width: 68px;
+}
+.cover {
+	margin-bottom: 55px;
+}
+.cover__title {
+	display: block;
+	width: 55%;
+	text-transform: capitalize;
+	font-size: 4rem;
+	margin: auto;
+	text-align: center;
+	padding-block: 20px;
+}
+.cover__description-text {
+	display: block;
+	width: 55%;
+	margin: auto;
+	font-size: 0.9rem;
+	text-align: center;
+	line-height: 1.3rem;
+}
+.cover__house-icon {
+	object-fit: cover;
+	width: 100%;
+	max-height: 550px;
+}
+
