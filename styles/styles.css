@@ -87,7 +87,7 @@
 }
 .works {
 	width: 1052px;
-	margin-bottom: 146px;
+	margin-bottom: 80px;
 	margin-inline: auto;
 }
 .horizontal-line {
@@ -118,6 +118,28 @@
 	text-decoration: none;
 	font-size: 20px;
 }
+
+.works__card-link:after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+}
+
+.works__card-link:before {
+	content: 'Mediterranian villa';
+	position: absolute;
+	left: 10px;
+	bottom: 3px;
+	opacity: 0;
+}
+
+.works__card-link:hover:before,
+.works__card-link:hover:after {
+	opacity: 1;
+}
+
 .works__image {
 	object-fit: cover;
 	width: 100%;
@@ -161,4 +183,22 @@
 .advertising-description__image--right {
 	grid-area: image-right;
 	width: 440px;
+}
+.footer {
+	display: flex;
+	gap: 110px;
+	padding: 40px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: rgb(0, 0, 0, 0.8);
+}
+.contact-info {
+	width: 500px;
+	color: #f9f8f4;
+}
+.footer__heading {
+	padding-top: 0;
+}
+.contact-info__text {
+	font-weight: 600;
 }
