@@ -5,25 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="/styles/globals.css" />
+		<link rel="stylesheet" href="/fonts/fonts.css" />
 		<link rel="stylesheet" href="/styles/styles.css" />
-		<link rel="stylesheet" href="fonts/fonts.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 	</head>
 	<body class="page">
 		<header class="header">
-			<a class="header__logo">
+			<a class="header__logo logo">
 				<img
-					class="header__logo-image"
-					src="./images/Archies.svg"
+					class="logo__image"
+					src="./images/logo.svg"
 					alt="Логотип проекта"
 				/>
 			</a>
 			<nav class="header__menu">
 				<ul class="header__menu-list">
-					<li class="header__menu-item header__menu-item__active">
+					<li class="header__menu-item header__menu-item--active">
 						<a class="header__menu-link" href="#">Home</a>
 					</li>
 					<li class="header__menu-item">
@@ -44,64 +50,129 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main class="main">
 			<section class="cover">
 				<h1 class="cover__title">Transform your space with archies</h1>
-				<h2 class="cover__description-text">
+				<h2 class="cover__description-text text">
 					Our team of expert designers works closely with clients to create
 					unique, functional snd beautiful spaces that are tailored to their
 					specific needs and preferences
 				</h2>
 			</section>
-			<section class="cover__slider">
-				
-			</section>
-			<!-- Slider main container -->
-			<div class="swiper">
-				<!-- Additional required wrapper -->
+			<div class="swiper cover__slider">
 				<div class="swiper-wrapper">
-					<!-- Slides -->
 					<div class="swiper-slide">
-						<a class="cover__house-link" target="_blank" href="#">
+						<a class="swiper-slide__house-link" target="_blank" href="#">
 							<img
-								class="cover__house-icon"
-								src="images/modern-house_1.avif"
-								alt="Дом в современном стиле"
-							/>
-						</a>
-					</div>
-					<div class="swiper-slide">
-						<a class="cover__house-link" target="_blank" href="#"></a>
-							<img
-								class="cover__house-icon"
+								class="swiper-slide__house-image"
 								src="images/house2.jpg"
-								alt="Дом в современном стиле"
+								alt="The house is in a modern style"
 							/>
 						</a>
+						<div class="swiper-slide__description">
+							<p class="swiper-slide__description-text">Latest Project</p>
+							<h3 class="swiper-slide__description-heading">
+								Modern industrial loft
+							</h3>
+							<a class="swiper-slide__description-text" href="#">
+								<i class="fa-solid fa-map-location"></i>
+								Location: New-York
+							</a>
+						</div>
 					</div>
-					<div class="swiper-slide">
-						<a class="cover__house-link" target="_blank" href="#"></a>
-							<img
-								class="cover__house-icon"
-								src="images/house3.jpg"
-								alt="Дом в современном стиле"
-							/>
-						</a>
-					</div>
-					
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
 
-				<!-- If we need navigation buttons -->
+					<div class="swiper-slide">
+						<a class="swiper-slide__house-link" target="_blank" href="#">
+							<img
+								class="swiper-slide__house-image"
+								src="images/modern-house_1.avif"
+								alt="The house is in a modern style"
+							/>
+						</a>
+						<div class="swiper-slide__description">
+							<p class="swiper-slide__description-text">Latest Project</p>
+							<h3 class="swiper-slide__description-heading">
+								Modern industrial loft
+							</h3>
+							<a class="swiper-slide__description-text" href="#">
+								<i class="fa-solid fa-map-location"></i>
+								Location: New-York
+							</a>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<a class="swiper-slide__house-link" target="_blank" href="#">
+							<img
+								class="swiper-slide__house-image"
+								src="images/house3.jpg"
+								alt="The house is in a modern style"
+							/>
+						</a>
+						<div class="swiper-slide__description">
+							<p class="swiper-slide__description-text">Latest Project</p>
+							<h3 class="swiper-slide__description-heading">
+								Modern industrial loft
+							</h3>
+							<a class="swiper-slide__description-text" href="#">
+								<i class="fa-solid fa-map-location"></i>
+								Location: New-York
+							</a>
+						</div>
+					</div>
+				</div>
+
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
-
-				<!-- If we need scrollbar -->
-				<div class="swiper-scrollbar"></div>
 			</div>
+			<section class="advertising-description">
+				<h2 class="advertising-description__heading heading">
+					Affordable pricing for exceptional design services
+				</h2>
+				<p class="advertising-description__text text">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+					tempora, minima qui libero, iste, saepe numquam ducimus accusamus enim
+					neque officia doloribus placeat? Enim, illum suscipit veritatis ipsum
+					facere aspernatur?
+				</p>
+				<img src="/images/modern-house_2.avif" alt="The house is in a modern style" class='advertising-description__image--left'>
+				<img src="/images/wood-architecture-facades.jpg" alt="A house with a wooden facade" class='advertising-description__image--right'>
+			</section>
+			<section class="works">
+				<h2 class="works__heading heading">Our featured work</h2>
+				<hr class="horizontal-line" />
+				<ul class="works__card-list">
+					<li class="works__card-list-item">
+						<a href="#" class="works__card-link">
+							<img
+								src="/images/restaurant.jpg"
+								alt="Restaurant"
+								class="works__image"
+							/>
+						</a>
+					</li>
+					<li class="works__card-list-item">
+						<a href="#" class="works__card-link">
+							<img
+								src="/images/workshouse.jpg"
+								alt="Country cottage"
+								class="works__image"
+							/>
+						</a>
+					</li>
+					<li class="works__card-list-item">
+						<a href="#" class="works__card-link">
+							<img
+								src="/images/shutterstock.jpg"
+								alt="Art Nouveau house"
+								class="works__image"
+							/>
+						</a>
+					</li>
+				</ul>
+			</section>
 		</main>
-		<footer></footer>
+		<footer class="footer"></footer>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="script.js"></script>
 	</body>
