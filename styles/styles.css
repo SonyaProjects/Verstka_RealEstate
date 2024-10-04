@@ -130,6 +130,7 @@
 .works__card-link:before {
 	content: 'Mediterranian villa';
 	position: absolute;
+	z-index: 1;
 	left: 10px;
 	bottom: 3px;
 	opacity: 0;
